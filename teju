@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration:none;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*book section*/
+#book{
+    background-image: url(./book3.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+#book::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+#book .book{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+
+}
+#book h1{
+    display: block;
+    width: fit-content;
+    font-size: 4ram;
+    position: relative;
+    color:transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+#book h1:nth-child(1){
+    animation-delay: 1.5s;
+
+}
+#book h1:nth-child(2){
+    animation-delay: 1.5s;
+    
+}
+#book h1:nth-child(3){
+    animation: text_reveal_name   0.5s ease forwards;
+    animation-delay: 1.5s;
+    
+}
+#book h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:0;
+    background-color: rgb(211, 189, 66);
+    animation: text_reveal_box 1s ease;
+    animation-delay: .3s;
+}
+#book h1:nth-child(1) span{
+   animation-delay: 1s;
+
+}
+#book h1:nth-child(2) span{
+    animation-delay: 1s;
+ 
+ }
+ #book h1:nth-child(3) span{
+    animation-delay: 1s;
+ 
+ }
+
+#book .cta{
+    display:inline-block ;
+    padding: 10px 30px;
+    color:white;
+    background-color:transparent ;
+    border: 2px solid rgb(211, 189, 66);
+    font-size: 2ram;
+    text-transform: uppercase;
+    letter-spacing: 0.1ram; 
+    margin-top: 30px;
+    transition: .3s ease ;
+    transition-property: background-color ,color;
+}
+#book .cta:hover{
+    color: white;
+    background-color: rgb(211, 189, 66);
+
+}
+/* end book section*/
+/*keyframes*/
+@keyframes text_reveal_box
+{50%{
+  
+    width: 100%;
+    left: 0;
+}
+100%{
+    width: 0;
+    left: 100%;
+}}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+ 
+}
+@keyframes text_reveal_name{
+    100%{
+        color:rgb(211, 189, 66);
+        font-weight: 500;
+    }}
+
+/*End keyframes*/
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  text-align: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Style the sections */
+section {
+  
+  padding: 40px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+section h1 {
+  margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  
+h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+p {
+    font-size: 20px;
+    text-align: center;
+  }
+a {
+    font-size: 20px;
+    box-align: center;
+  }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }

@@ -1,0 +1,174 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and text color for the body */
+  body {
+    background-color: #ffffff;
+    color:beige;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+
+    padding: 20px;
+    color: #0f0334;
+    
+  }
+  
+  header h1 {
+    font-size: 42px;
+    text-underline-offset: black;
+    
+  }
+ 
+
+  ul {
+    
+    list-style: none;
+  }
+  
+  ul li {
+    display: inline;
+    margin: 15px;
+  }
+  
+  ul li a {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  
+
+  
+ 
+  ul li a[href="skills.html"] {
+    background-color: #12064d;
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  }
+  
+  ul li a[href="contact.html"] {
+    background-color: #0c0542;
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  }
+
+ 
+  
+  
+  ul li a[href="About.html"] {
+    background-color: #1c0850;
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  }
+  ul li a:hover {
+    background-color: #457d8d;
+  } 
+ 
+  
+  /* Style the sections */
+  section {
+    padding: 40px;
+  }
+  
+  section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the footer */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+    padding: 20px;
+    color: #38ace2;
+    text-align: center;
+    font-size: 14px;
+  }
+  .img{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+  }
+  
+  
+  
+  .round-image {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .round-image img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  
+  #home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #home h2 {
+    margin: 45px;
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    margin: 60px;
+    margin-left: 15%;
+    margin-right: 5%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  
+
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+    font-size: larger;
+    text-align: center;
+  }
+  
+  
+  
+  .image {
+    flex: 1;
+    text-align: center;
+  
+  }
+  
+  img {
+    max-width: 30%;
+    text-align: center;
+    height: auto;
+    
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  
+
+  

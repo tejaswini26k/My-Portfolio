@@ -1,0 +1,151 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and text color for the body */
+  body {
+    background-color: #ffffff;
+    color:beige;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+
+    padding: 20px;
+    color: #100465;
+  }
+  
+  header h1 {
+    font-size: 42px;
+  }
+  
+  ul {
+    
+    list-style: none;
+  }
+  
+  ul li {
+    display: inline;
+    margin: 15px;
+  }
+  
+  ul li a {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+    text-decoration: none;
+    color: #fff;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  
+
+  
+ 
+  ul li a[href="skills.html"] {
+    background-color: #05054d;
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  }
+  
+  ul li a[href="#contact"] {
+    background-color: #05054d;
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  }
+
+   
+  
+  
+  ul li a[href="About.html"] {
+    background-color: #05054d;
+    border-radius: 20px; /* Update border-radius to 50% for a circle */
+  }
+  ul li a:hover {
+    background-color: #66d0ed;
+  }  
+
+
+  .img{
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  
+  .round-image {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .round-image img {
+    display: block;
+    margin: 0 auto;
+  }
+   
+  h2{
+    font-size: 40px;
+    align-items: center;
+    text-align: center;
+  }
+
+  
+
+
+.card {
+    
+    background-color: rgb(161, 161, 171);
+    box-shadow: 0 4px 8px 0 rgba(16, 15, 15, 0.861);
+    transition: 0.3s;
+    padding: 100px;
+    height: 150px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: baseline;
+    
+    margin: 25px;
+    margin-top: 50px;
+   }
+  
+  .card:hover
+   {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.769);
+   }
+  
+  .container 
+  {
+    padding: 2px 16px;
+  }
+ 
+.column {
+    float: left;
+    width: 400px;
+    padding: 0 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+    /* Style the footer */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        
+        padding: 20px;
+        color: #fcb8b8;
+        text-align: center;
+        font-size: 14px;
+      }
+
+   .card h3 {
+    margin-top: -65px;
+   }   
+ .card p{
+   margin-top: 10px;
+ }     
